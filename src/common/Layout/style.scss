@@ -1,0 +1,58 @@
+@import "../../App.scss";
+
+.layout-base {
+  .topbar-wrapper {
+    @include box-shadow;
+    align-items: center;
+    background: map-get($colors, 'primary-accent');
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 0 1.8rem;
+    width: 100%;
+
+    &__right svg {
+      width: 1.8rem;
+    }
+
+    svg {
+      height: 1.8rem;
+      fill: map-get($colors, 'white-dark');
+
+      g {
+        fill: map-get($colors, 'white-dark');
+      }
+
+      &:hover {
+        cursor: pointer;
+        fill: map-get($colors, 'white-light');
+
+        g {
+          fill: map-get($colors, 'white-light');
+        }
+      }
+    }
+  }
+
+  .middle-wrapper {
+    display: flex;
+
+    .sidebar-wrapper {
+      display: flex;
+      height: 100%;
+      z-index: 10;
+  
+      .ant-menu {
+        min-height: calc(100vh - 4rem);
+      }
+    }
+
+    .content-wrapper {
+      background-color: map-get($colors, 'white-light');
+      padding: 2rem 3.2rem;
+      overflow-y: auto;
+      height: calc(100vh - 4rem);
+      width: 100%;
+    }
+  }
+}

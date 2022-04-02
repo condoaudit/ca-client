@@ -1,0 +1,25 @@
+@mixin box-shadow {
+  -webkit-box-shadow: 1px 4px 10px 0px #00000040;
+  box-shadow: 1px 4px 10px 0px #00000040;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  transition: box-shadow 0.3s;
+}
+
+@mixin animated-underline {
+  display: inline-block;
+
+  &::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: map-get($colors, 'white-light');
+    transition: 300ms;
+  }
+  
+  &:hover::after {
+    width: 100%;
+  }
+}

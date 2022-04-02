@@ -1,0 +1,33 @@
+@import "../../../../App.scss";
+
+.auth-layout-base {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: map-get($colors, 'primary-accent');
+  height: 100vh;
+
+  .content {
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+
+    .ant-card-head-title svg {
+      height: 3rem;
+      margin-top: 1.2rem;
+
+      g {
+        fill: map-get($colors, 'gray2');
+      }
+    }
+
+    .ant-card-body {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: map-get($devices, 'md')) {
+      width: 86%;
+    }
+  }
+}

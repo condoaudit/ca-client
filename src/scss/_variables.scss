@@ -1,0 +1,32 @@
+$devices: (
+  'sm': 768px,
+  'md': 1024px,
+  'lg': 1280px,
+  'xlg': 1440px
+);
+
+$colors: (
+  'primary': #001529,
+  'primary-accent': #001c39,
+  'green': #95c861,
+  'green-light': #acd681,
+  'green-dark': #7da950,
+  'blue': #307fa1,
+  'blue-light': #38a3cb,
+  'blue-dark': #00729d,
+  'white': #edf2f3,
+  'white-light': #f8feff,
+  'white-dark': #e1e6e8,
+  'black': #0d171b,
+  'black-light': #162024,
+  'black-dark': #060d0f,
+  'gray1': #182123,
+  'gray2': #2c383b,
+  'gray3': #505f63,
+  'gray4': #809396,
+  'gray5': #93abab,
+  'gray6': #cdd3d4,
+  'red-aux': #f03d3d,
+  'green-aux': #28bb49,
+  'yellow-aux': #ffce52
+);
